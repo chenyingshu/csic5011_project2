@@ -11,14 +11,43 @@ We trained and tested in
 ## Quick Start
 ### Inference
 
+You can direct generate synthetic CXR images from pretrained models.
+
+Please download and put pretrained models in directory "**models/**".
+
+Run the code to randomly generate some CXR images with label: (labels: COVID: 0, Normal: 1, Viral: 2, Lung: 3)
+<pre><code>python generate.py --network=models/4classes-cond-paper256-snapshot-025000.pkl --seeds=0-99 --outdir=out/4class-COVID-0-99 --class=0
+python generate.py --network=models/1class-COVID-paper256-snapshot-025000.pkl --seeds=0-99 --outdir=out/1class-COVID-0-99 
+</code></pre>
+
+
 ### Training
 #### Data processing
 Please check the script file "data_process.sh" for details.
 For 4-class conditioned training, 
 1. run the labeling script "Data/data_class.py":
-[data labeling instruction](https://github.com/chenyingshu/csic5011_project2/tree/main/Data#3-generate-data-labeling-file-for-image-synthesis-training-optional) 
+[data labeling instruction](../../Data#3-generate-data-labeling-file-for-image-synthesis-training-optional) 
 2. run the process script for training:
 <pre><code>python dataset_tool.py --source=../../Data/COVID-19_Radiography_Dataset_256x256/ --dest=./data/4classes</code></pre>
+
+For unconditioned training, just run either one line to get training data format:
+<pre><code>python dataset_tool.py --source=../Data/COVID-19_Radiography_Dataset_256x256/Lung_Opacity --dest=./data/Lung256x256.zip 
+python dataset_tool.py --source=../Data/COVID-19_Radiography_Dataset_256x256/COVID --dest=./data/COVID256x256.zip 
+python dataset_tool.py --source=../Data/COVID-19_Radiography_Dataset_256x256/Normal --dest=./data/Normal256x256.zip 
+python dataset_tool.py --source=../Data/COVID-19_Radiography_Dataset_256x256/Viral\ Pneumonia --dest=./data/Viral256x256.zip
+</code></pre>
+
+#### Train the model
+Run the training code, see official intrusction [here](https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/README.md#training-new-networks):
+<pre><code>python train.py --outdir=~/training-runs --data=~/mydataset.zip --gpus=1 --dry-run
+python train.py --outdir=~/training-runs --data=~/mydataset.zip --gpus=1</code></pre>
+
+Please check the example training script file "[train_script.sh](./train_script.sh)" for details.
+Here is an example to train 4-class conditioned CXR model:
+<pre><code>CUDA_VISIBLE_DEVICES=0,1 python train.py --outdir=./training-runs --data=./data/4classes --gpus=2 --cond=1 --cfg=paper256</code></pre>
+
+And e.g., train unconditioned Normal CXR model:
+<pre><code>CUDA_VISIBLE_DEVICES=1 python train.py --outdir=./training-runs --gpus=1 --data=./data/Normal256x256.zip  --cfg=paper256</code></pre>
 
 ## License
 
