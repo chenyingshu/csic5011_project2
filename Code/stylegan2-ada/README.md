@@ -2,7 +2,7 @@
 - generate.py: change the output image format to support grayscale image output.
 
 
-Please check the original readme description for environment setup:
+**Please check the original readme description for environment setup:**
 <br>https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/README.md</br>
 
 
