@@ -74,6 +74,7 @@ Or you can manually download from [Data - OneDrive](https://hkustconnect-my.shar
 
 
 **2. Download or generate splitted data for classification training:**
+
 Run bash script to directly download and unzip preprocessed data:
 <pre><code>bash download_class_data.sh </code></pre>
 
@@ -82,5 +83,6 @@ Or you can run the script to split the data randomly (**assume alreadly finished
 
 
 **3. Generate data labeling file for image synthesis training (optional):**
+
 You can run the script to create data annotation json file (**assume alreadly finished step 1**): <pre><code>python data_class.py </code></pre>
 
