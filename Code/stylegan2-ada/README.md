@@ -15,7 +15,8 @@ We trained and tested in
 #### Data processing
 Please check the script file "data_process.sh" for details.
 For 4-class conditioned training, 
-1. run the labeling script "Data/data_class.py": [https://github.com/chenyingshu/csic5011_project2/tree/main/Data#3-generate-data-labeling-file-for-image-synthesis-training-optional ](label data instruction )
+1. run the labeling script "Data/data_class.py":
+[data labeling instruction](https://github.com/chenyingshu/csic5011_project2/tree/main/Data#3-generate-data-labeling-file-for-image-synthesis-training-optional) 
 2. run the process script for training:
 <pre><code>python dataset_tool.py --source=../../Data/COVID-19_Radiography_Dataset_256x256/ --dest=./data/4classes</code></pre>
 
