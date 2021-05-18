@@ -43,7 +43,7 @@ Pneumonia is a serious infection in the lungs. It can result from viruses, bacte
 Ref: [https://www.medicalnewstoday.com/articles/ground-glass-opacity#infections ](https://www.medicalnewstoday.com/articles/ground-glass-opacity#infections ) 
 <br>
 
-####2. Preprocessed Data 
+#### 2. Preprocessed Data 
 
 We preprocessed data into 256x256 grayscale (1-channel) images of 4 classes (i.e., Normal, COVID, Lung, Viral) for further use. 
 
@@ -58,7 +58,8 @@ Total zip file size: 669MB, Uncompressed size after extraction: 701MB
 | Total Number | 10,192    | 3,616     | 1,345           | 6,012        |
 
 
-## Instruction
+##  Instruction
+Download preprocessed data:
 
 
 
