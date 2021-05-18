@@ -1,9 +1,12 @@
 ## Main revision to fit our project:
 - generate.py: change the output image format to support grayscale image output.
 
-
-**Please check the original readme description for environment setup:**
-<br>https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/README.md</br>
+## Requirements
+We trained and tested in
+- Python 3.7
+- pytorch 1.7.0 (CUDA 10.2)
+- 2 2080 Ti NVIDIA GPUs with 11GB of GPU memory
+- For other requirements, please refer to the original readme description: **https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/README.md#requirements**
 
 ## Quick Start
 ### Inference
