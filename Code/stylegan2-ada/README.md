@@ -11,14 +11,18 @@ We trained and tested in
 ## Quick Start
 ### Inference
 
-You can direct generate synthetic CXR images from pretrained models.
+You can direct generate synthetic CXR images from [pretrained models](https://hkustconnect-my.sharepoint.com/:f:/g/personal/ychengw_connect_ust_hk/EksS67qYXk1HvavEx0rVg64BTolg-Xyx4x4IZNOCzSlcjA?e=1yMmuj). 
 
 Please download and put pretrained models in directory "**models/**".
+
+You can run the script to download all pretrained models:
+<pre><code>bash download_models.sh</code></pre>
 
 Run the code to randomly generate some CXR images with label: (labels: COVID: 0, Normal: 1, Viral: 2, Lung: 3)
 <pre><code>python generate.py --network=models/4classes-cond-paper256-snapshot-025000.pkl --seeds=0-99 --outdir=out/4class-COVID-0-99 --class=0
 python generate.py --network=models/1class-COVID-paper256-snapshot-025000.pkl --seeds=0-99 --outdir=out/1class-COVID-0-99 
 </code></pre>
+The synthetic images are save in "out/DEST_DIR_NAME".
 
 
 ### Training
