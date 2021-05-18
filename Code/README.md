@@ -1,16 +1,26 @@
-# csic5011_project2
-CSIC 5011 / MATH 5473 Final Project 
+# CSIC 5011 / MATH 5473 Final Project \- Source Code \- 
 
-\- Source Code \- 
+**This directory contains main source codes used in the final projects.**
 
+## Instruction
 
-This directory contains main source codes used in the final projects.
+- **Visualization.ipynb** is the script to visualize data in low dimensional space.
 
-## Instructions
-- Evaluation.ipynb is the script to evaluate the classification accuracy.
+- **Classification.ipynb** is the script to train and inference CXR images.
 
-- Classification.ipynb is the script to train and inference CXR images.
+- **Folder "stylegan2-ada"** is the source for generative model.
 
-- Folder "stylegan2-ada" is the source for generative model. 
+- **Evaluation.ipynb** is the script to evaluate the classification accuracy. 
+
+## Quick Start
+
+### Step 1
+
+### Step 2
+
+### Step 3
+
+### Step 4
+
 
 
