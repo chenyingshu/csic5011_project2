@@ -1,4 +1,4 @@
-## Main revision to fit our project:
+## Main revision to fit our project
 - generate.py: change the output image format to support grayscale image output.
 
 ## Requirements
