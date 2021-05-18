@@ -12,19 +12,19 @@ Original data link: [https://www.kaggle.com/tawsifurrahman/covid19-radiography-d
 Resolution of Grayscale PNG: 299*299 pixels.
  
 
-**Normal [10,192 images]: **
+**Normal [10,192 images]:**
 
 Normally, the lungs appear black in X-ray and CT scans. This indicates that they are free of any visible blockages. 
 
  
 
-Non-COVID Lung_Opacity (Ground glass opacity) [6,012 images]:  
+**Non-COVID Lung_Opacity (Ground glass opacity) [6,012 images]:**
 
 Ground glass opacity (GGO) refers to the hazy gray areas that can show up in CT scans or X-rays of the lungs. Gray areas indicate increased density, meaning that something is partially filling the air spaces inside the lungs. 
 
  
 
-**COVID [3,616 images]: **
+**COVID [3,616 images]:**
 
 A 2020 review and meta-analysis found that just over 83% of people with COVID-19-related pneumonia had GGO. 
 
@@ -58,29 +58,9 @@ Total zip file size: 669MB, Uncompressed size after extraction: 701MB
 | Total Number | 10,192    | 3,616     | 1,345           | 6,012        |
 
 
-##  Instructions
-These instructions are used for different tasks, and some data may be duplicated:
-
-- 1 is for general use, e.g. real data visualization.
-- 2 is for classification training and testing.
-- 3 is for generative model training (optional), there is another data instruction in "Code/stylegan2-ada" directory.
-
-**1. Download preprocessed data:**
-
-Run bash script to directly download and unzip preprocessed data:
-<pre><code>bash download_data.sh </code></pre>
-
-Or you can manually download from [Data - OneDrive](https://hkustconnect-my.sharepoint.com/:u:/g/personal/ychengw_connect_ust_hk/EXAw9MX8b9VPhiJhkllcAn4BN-PQTUmWwoDk8rHkDgjeeg?e=RFOxhX) , then save and unzip in the "Data" directory.
-
-
-**2. Download or generate splitted data for classification training:**
-Run bash script to directly download and unzip preprocessed data:
-<pre><code>bash download_class_data.sh </code></pre>
-
-Or you can run the script to split the data randomly (**assume alreadly finished step 1**): <pre><code>python data_split.py </code></pre>
+##  Instruction
+Download preprocessed data:
 
 
 
-**3. Generate data labeling file for image synthesis training (optional):**
-You can run the script to create data annotation json file (**assume alreadly finished step 1**): <pre><code>python data_class.py </code></pre>
 
