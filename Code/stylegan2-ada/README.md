@@ -5,6 +5,10 @@
 **Please check the original readme description for environment setup:**
 <br>https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/README.md</br>
 
+## Quick Start
+### Inference
+
+### Training
 
 ## License
 
