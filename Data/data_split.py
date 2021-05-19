@@ -32,8 +32,8 @@ print()
 cnt = 0
 for cls in classes_dir:
 	cnt += 1
-	os.makedirs(os.path.join(dest_dir,'train', cls))
-	os.makedirs(os.path.join(dest_dir,'test', cls))
+	os.makedirs(os.path.join(dest_dir,'training_data', cls))
+	os.makedirs(os.path.join(dest_dir,'testing_data', cls))
 
 	src = os.path.join(root_dir, cls)
 

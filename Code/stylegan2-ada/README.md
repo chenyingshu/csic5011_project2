@@ -5,8 +5,11 @@
 We trained and tested in
 - Python 3.7
 - pytorch 1.7.0 (CUDA 10.2)
-- 2 2080 Ti NVIDIA GPUs with 11GB of GPU memory
-- For other requirements, please refer to the original readme description: **https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/README.md#requirements**
+- 2  NVIDIA GeForce RTX 2080 Ti GPUs with 11GB of GPU memory
+- For other requirements, please refer to the original readme description: *https://github.com/NVlabs/stylegan2-ada-pytorch/blob/main/README.md#requirements*.
+
+We trained 25 million images for each model (one 4-class conditional model and 4 unconditional models) with the same training configurations (--cfg paper256). Training time is around 5 to 6 days per model. 
+More statistics of training time can be referred to official document: *https://github.com/NVlabs/stylegan2-ada-pytorch\#expected-training-time*.
 
 ## Quick Start
 ### Inference
@@ -32,7 +35,7 @@ For 4-class conditioned training,
 1. run the labeling script "Data/data_class.py":
 [data labeling instruction](../../Data#3-generate-data-labeling-file-for-image-synthesis-training-optional) 
 2. run the process script for training:
-<pre><code>python dataset_tool.py --source=../../Data/COVID-19_Radiography_Dataset_256x256/ --dest=./data/4classes</code></pre>
+<pre><code>python dataset_tool.py --source=../../Data/COVID-19_Radiography_Dataset_256x256/ --dest=./data/4classes.zip</code></pre>
 
 For unconditioned training, just run either one line to get training data format:
 <pre><code>python dataset_tool.py --source=../Data/COVID-19_Radiography_Dataset_256x256/Lung_Opacity --dest=./data/Lung256x256.zip 
