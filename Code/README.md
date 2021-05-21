@@ -6,21 +6,13 @@
 
 - **Visualization.ipynb** is the script to visualize data in low dimensional space.
 
-- **Classification.ipynb** is the script to train and inference CXR images.
+- **Folder "Classification"** contains scripts to train and predict CXR images.
 
 - **Folder "stylegan2-ada"** is the source for generative model.
 
 - **Evaluation.ipynb** is the script to evaluate the classification accuracy. 
 
-## Quick Start
 
-### Step 1
-
-### Step 2
-
-### Step 3
-
-### Step 4
 
 
 
