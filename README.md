@@ -35,16 +35,16 @@
 </div>
 
 ### Classification Performance
-<div style="display: flex">
-  <div width="45%" style="display: flex; flex-direction: column">
-    <img src="./Results/confuse_matrix_4x4_real.png" alt="Real data classification"  style="float: middle; margin: 10px;"  />
-    <p>Real Data - Overall Accuracy: 84.1%</p>
-  </div>
-  <div width="45%" style="display: flex; flex-direction: column">
-    <img src="./Results/confuse_matrix_4x4_blended.png" alt="Blended data classification"  style="float: middle; margin: 10px;"  />
-    <p>Real + Synthetic Data - Overall Accuracy: 91%</p>
-  </div>
-</div>
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Real Data - Overall Accuracy: 84.1%</b></td>
+    <td><b style="font-size:30px">Real + Synthetic Data - Overall Accuracy: 91%</b></td>
+ </tr>
+ <tr>
+    <td><img src="./Results/confuse_matrix_4x4_real.png" alt="Real data classification"  style="float: middle; margin: 10px;"  /></td>
+    <td><img src="./Results/confuse_matrix_4x4_blended.png" alt="Blended data classification"  style="float: middle; margin: 10px;"  /></td>
+ </tr>
+</table>
 
 ## Acknowledgements
 
