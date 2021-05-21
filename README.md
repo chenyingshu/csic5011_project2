@@ -14,7 +14,7 @@
 
 ## Instruction
 - csic5011_project2.pdf is the final report.
-- Image_Assist_COVID_ChenSumIpWu.pptx is the presentaion slides.
+- Image_Assist_COVID_ChenSumIpWu.pdf is the presentaion slides.
 - presentaion video link: https://youtu.be/i8ON-oZdBFk
 - "Code" contains main source codes in the report.
 - "Data" contains data collection information.
