@@ -48,6 +48,8 @@
 
 ## Acknowledgements
 
+Original data were collected from [COVID-19 Radiography Database](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database).
+
 The code in "Classification.ipynb" borrows heavily from [Kaggle code](https://www.kaggle.com/mahmoudreda55/x-ray-covid19-95 "Kaggle code").
 
 
