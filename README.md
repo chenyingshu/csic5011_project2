@@ -22,10 +22,8 @@
 
 ## Result Gallery
 
-![alt text](./Results/reals.png "Real CXR samples")
-<!-- <img src="./Results/reals.png"
-     alt="Real CXR samples"
-     style="float: left; margin-right: 10px;" /> -->
+<!-- ![alt text](./Results/real_covid.png "Real COVID CXRs") -->
+<img src="./Results/real_covid.png" alt="Real CXR samples"  style="float: left; margin-right: 10px; width:24%" />
 
 ## Acknowledgements
 
