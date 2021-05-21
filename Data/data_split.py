@@ -13,7 +13,8 @@ import argparse
 parser = argparse.ArgumentParser(description="Dataset divider")
 parser.add_argument("--root", default="./COVID-19_Radiography_Dataset_256x256", help="Path to data")
 parser.add_argument("--save_path", default="./classification_data", help="Path to save splited data")
-parser.add_argument("--test_ratio", default=0.2, help="Test ratio - 0.2 means splitting data in 80 % train and 20 % test")
+parser.add_argument("--test_num", default=250, help="the equal number of testing images for each class")
+parser.add_argument("--test_ratio", help="Test ratio - e.g. 0.2 means splitting data in 80 % train and 20 % test") #optional
 args = parser.parse_args()
 
 root_dir = args.root
@@ -32,14 +33,17 @@ print()
 cnt = 0
 for cls in classes_dir:
 	cnt += 1
-	os.makedirs(os.path.join(dest_dir,'training_data', cls))
-	os.makedirs(os.path.join(dest_dir,'testing_data', cls))
+	os.makedirs(os.path.join(dest_dir,'train', cls))
+	os.makedirs(os.path.join(dest_dir,'test', cls))
 
 	src = os.path.join(root_dir, cls)
 
 	allFileNames = os.listdir(src)
 	np.random.shuffle(allFileNames)
-	train_FileNames, test_FileNames = np.split(np.array(allFileNames),[int(len(allFileNames)* (1 - test_ratio))])
+	if args.test_ratio is None:
+		train_FileNames, test_FileNames = np.split(np.array(allFileNames),[int(len(allFileNames) - args.test_num)])
+	else:
+		train_FileNames, test_FileNames = np.split(np.array(allFileNames),[int(len(allFileNames)* (1 - test_ratio))])
 
 	train_FileNames = [os.path.join(src, name) for name in train_FileNames.tolist()]
 	test_FileNames = [os.path.join(src, name) for name in test_FileNames.tolist()]

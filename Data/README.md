@@ -65,24 +65,37 @@ These instructions are used for different tasks, and some data may be duplicated
 - 2 is for classification training and testing.
 - 3 is for generative model training (optional), there is another data instruction in "Code/stylegan2-ada" directory.
 
-### **1. Download preprocessed data:**
+All preprocessed data (steps 1,2,3) for training are in this [link](https://hkustconnect-my.sharepoint.com/:f:/g/personal/ychengw_connect_ust_hk/EiuGIWPRSnBKsWThN0ucM8oBzhJE-wrhiOnIrZOj5lLjOA?e=e6Kei0). You can manually download data from it and unzip the data in "Data" directory.
+
+### **1.1. Download preprocessed data:**
 
 Run bash script to directly download and unzip preprocessed data:
-<pre><code>bash download_data.sh </code></pre>
-
-Or you can manually download from [Data - OneDrive](https://hkustconnect-my.sharepoint.com/:u:/g/personal/ychengw_connect_ust_hk/EXAw9MX8b9VPhiJhkllcAn4BN-PQTUmWwoDk8rHkDgjeeg?e=RFOxhX) , then save and unzip in the "Data" directory.
+<pre><code>bash download_data.sh COVID-19_Radiography_Dataset_256x256</code></pre>
 
 
-### **2. Download or generate splitted data for classification training:**
+### **1.2. Download synthetic data for visualization (optional):**
+
+Run bash script to directly download and unzip synthetic data:
+<pre><code>bash download_data.sh Synthesis4Viz</code></pre>
+
+
+### **2.1. Download or generate splitted data for classification training:**
 
 Run bash script to directly download and unzip preprocessed data:
-<pre><code>bash download_class_data.sh </code></pre>
+<pre><code>bash download_data.sh classification_data</code></pre>
 
 Or you can run the script to split the data randomly (**assume alreadly finished step 1**): <pre><code>python data_split.py </code></pre>
 
+### **2.2. Download synthetic data for classification use (optional):**
 
+You can run the script to download some synthetic 'COVID', 'Lung', 'Viral' CXRs (**assume alreadly finished step 1**): 
+<pre><code>bash download_data.sh Synthesis4Class</code></pre>
+and then in directory "classification_data", run script <pre><code>bash mix_train_data.sh </pre></code> to make a blended training dataset.
 
 ### **3. Generate data labeling file for image synthesis training (optional):**
 
 You can run the script to create data annotation json file (**assume alreadly finished step 1**): <pre><code>python data_class.py </code></pre>
+
+
+
 
