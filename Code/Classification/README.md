@@ -1,11 +1,17 @@
 ## Requirements
 
 tensorflow>=2.3.0
+
 keras
+
 keras-tuner
+
 pandas
+
 numpy
+
 matplotlib
+
 seaborn
 
 ## Instruction
