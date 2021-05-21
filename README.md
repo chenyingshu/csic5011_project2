@@ -21,10 +21,18 @@
 - "Results" contains some results.
 
 ## Result Gallery
-
+### Real vs Synthetic Chest X-rays
 <!-- ![alt text](./Results/real_covid.png "Real COVID CXRs") -->
-<img src="./Results/real_covid.png" alt="Real CXR samples"  style="float: left; margin-right: 10px; width:24%" />
-
+<div style="display: flex">
+  <img src="./Results/real_covid.png" alt="Real COVID-19 CXRs"  style="float: left; margin-right: 10px;" width="45%" />
+  <img src="./Results/real_lung.png" alt="Real Lung Opacity CXRs"  style="float: left; margin-right: 10px;" width="45%" />
+  <img src="./Results/real_normal.png" alt="Real Normal CXRs"  style="float: left; margin-right: 10px;" width="45%" />
+  <img src="./Results/real_viral.png" alt="Real Viral PNA CXRs"  style="float: left; margin-right: 10px;" width="45%" />
+  <img src="./Results/fake_covid.png" alt="Synthetic COVID-19 CXRs"  style="float: left; margin-right: 10px;" width="45%" />
+  <img src="./Results/fake_lung.png" alt="Synthetic Lung Opacity CXRs"  style="float: left; margin-right: 10px;" width="45%" />
+  <img src="./Results/fake_normal.png" alt="Synthetic Normal CXRs"  style="float: left; margin-right: 10px;" width="45%" />
+  <img src="./Results/fake_viral.png" alt="Synthetic Viral PNA CXRs"  style="float: left; margin-right: 10px;" width="45%" />
+</div>
 ## Acknowledgements
 
 The code in "Classification.ipynb" borrows heavily from [Kaggle code](https://www.kaggle.com/mahmoudreda55/x-ray-covid19-95 "Kaggle code").
