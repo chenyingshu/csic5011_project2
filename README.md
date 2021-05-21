@@ -33,6 +33,8 @@
   <img src="./Results/fake_normal.png" alt="Synthetic Normal CXRs"  style="float: left; margin-right: 10px;" width="45%" />
   <img src="./Results/fake_viral.png" alt="Synthetic Viral PNA CXRs"  style="float: left; margin-right: 10px;" width="45%" />
 </div>
+
+
 ## Acknowledgements
 
 The code in "Classification.ipynb" borrows heavily from [Kaggle code](https://www.kaggle.com/mahmoudreda55/x-ray-covid19-95 "Kaggle code").
