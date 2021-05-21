@@ -22,10 +22,10 @@
 
 ## Result Gallery
 
-<!-- ![alt text](./Results/real.png "Real CXR samples") -->
-<img src="./Results/real.png"
+![alt text](./Results/reals.png "Real CXR samples")
+<!-- <img src="./Results/reals.png"
      alt="Real CXR samples"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px;" /> -->
 
 ## Acknowledgements
 
