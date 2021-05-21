@@ -34,6 +34,9 @@
   <img src="./Results/fake_viral.png" alt="Synthetic Viral PNA CXRs"  style="float: left; margin-right: 10px;" width="45%" />
 </div>
 
+### Data Visualization
+<img src="./Results/viz_blended_data.png" alt="Visualization of Blended Data"  style="float: left; margin: 10px;"  />
+
 ### Classification Performance
 <table border="0">
  <tr>
