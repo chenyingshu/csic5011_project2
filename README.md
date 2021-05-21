@@ -34,6 +34,17 @@
   <img src="./Results/fake_viral.png" alt="Synthetic Viral PNA CXRs"  style="float: left; margin-right: 10px;" width="45%" />
 </div>
 
+### Classification Performance
+<div style="display: flex">
+  <div width="45%" style="display: flex; flex-direction: column">
+    <img src="./Results/confuse_matrix_4x4_real.png" alt="Real data classification"  style="float: middle; margin: 10px;"  />
+    <p>Real Data - Overall Accuracy: 84.1%</p>
+  </div>
+  <div width="45%" style="display: flex; flex-direction: column">
+    <img src="./Results/confuse_matrix_4x4_blended.png" alt="Blended data classification"  style="float: middle; margin: 10px;"  />
+    <p>Real + Synthetic Data - Overall Accuracy: 91%</p>
+  </div>
+</div>
 
 ## Acknowledgements
 
