@@ -8,7 +8,7 @@
 
 - **Folder "Classification"** contains scripts to train and predict CXR images.
 
-- **Folder "stylegan2-ada"** is the source for generative model.
+- **Folder "stylegan2-ada"** is the source code for generative model.
 
 - **Evaluation.ipynb** is the script to evaluate the classification accuracy. 
 
