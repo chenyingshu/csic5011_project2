@@ -15,7 +15,7 @@
 ## Instruction
 - csic_5011_project2_report_ChenSumIpWu.pdf is the final report.
 - csic_5011_project2_slides_ChenSumIpWu.pdf is the presentation slides.
-- presentaion video link: https://youtu.be/i8ON-oZdBFk
+- presentation video link: https://youtu.be/i8ON-oZdBFk
 - "Code" contains main source codes in the report.
 - "Data" contains data collection information.
 - "Results" contains some results.
